@@ -1,0 +1,9 @@
+bases:
+  - ../../base
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/args
+        value: ["-text='hello world from v1'"]
+    target:
+      kind: Deployment
