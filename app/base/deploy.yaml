@@ -15,7 +15,9 @@ spec:
     spec:
       containers:
         - name: echo-server
-          image: hashicorp/http-echo
-          args: ["-text='hello world'"]
+          image: quay.io/rhdevelopers/bgd:1.0.0
+          env:
+            - name: COLOR
+              value: "blue"
           ports:
             - containerPort: 5678
