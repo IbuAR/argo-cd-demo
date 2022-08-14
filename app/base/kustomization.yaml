@@ -1,3 +1,4 @@
 bases:
   - ./deploy.yaml
   - ./svc.yaml
+  - ./api.yaml
