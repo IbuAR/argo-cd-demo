@@ -1,11 +1,2 @@
 bases:
   - ../../base
-patchesJson6902:
-  - target:
-      kind: Deployment
-      name: echo-server
-      version: v1
-    patch: |-
-      - op: replace
-        path: /spec/template/spec/containers/0/env/0/value
-        value: yellow
